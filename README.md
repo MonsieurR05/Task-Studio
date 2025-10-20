@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 TaskStudio AI
 
-## Getting Started
+**TaskStudio AI** is a modern, AI-powered task management platform inspired by tools like Notion, Monday, and Atlassian.  
+It enables users to **create, manage, and organize tasks** using natural language — powered by **Cloudflare’s Llama AI** and **Next.js 15**.
 
-First, run the development server:
+> 🚧 **This project is still in active development.**  
+> Core task management, dashboard, and AI features are working, but several features like authentication UI and task modals are still being completed.
 
+---
+
+## ✨ Features
+
+✅ **AI Assistant**
+- Create tasks by describing them in plain English.
+- Example: “Make a presentation draft due December 17th.”  
+  → The AI automatically adds it to your task board.
+
+✅ **Kanban Board**
+- Drag and drop tasks between _To Do_, _In Progress_, and _Done_.
+- Modern, fluid task transitions with clean UI.
+
+✅ **Dashboard Overview**
+- View total active, completed, and overdue tasks.
+- AI-integrated task creation and search coming soon.
+
+✅ **Database**
+- Managed via **Prisma ORM** and **PostgreSQL (Neon)**.
+- Supports relational models for users, projects, and tasks.
+
+✅ **Authentication**
+- Powered by **NextAuth.js** (currently under UI enhancement phase).
+
+---
+
+## 🧠 Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| **Frontend** | Next.js 15 (App Router, Turbopack), React 19, Tailwind CSS |
+| **Backend** | Next.js API Routes, Prisma ORM |
+| **Auth** | NextAuth.js |
+| **Database** | PostgreSQL (via [Neon.tech](https://neon.tech)) |
+| **AI** | Cloudflare Workers AI (Llama 3.x) |
+| **UI Library** | shadcn/ui + Lucide icons |
+| **Drag & Drop** | React DnD (HTML5Backend) |
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
 ```bash
+git clone https://github.com/yourusername/taskstudio-ai.git
+cd taskstudio-ai
+npm i
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
